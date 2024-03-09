@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Portfolio</title>
+    <!-- Import Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Import Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Input for check Menu Burger -->
+        <input type="checkbox" name="check" id="check">
+        <!-- Name -->
+        <p class="name">Chen Jimmy</p>
+        <!-- LOGO -->
+        <a href="#" class="logo" onclick="PageHome()">
+            <img src="../imgs/logo.png" alt="logo">
+        </a>
+        <!-- Navigator -->
+        <nav class="nav">
+            <a href="#" class="logo" onclick="PageHome()">
+                <img src="../imgs/logo.png" alt="logo">
+            </a>
+            <div class="divider"></div>
+            <a href="../index.html">Home</a>
+            <a href="../pages/about.html">About</a>
+            <a href="../pages/projects.html">Projets</a>
+            <a href="../pages/contact.html">Contact</a>
+        </nav>
+        <label for="check">
+            <i class='bx bx-menu menu'></i>
+            <i class='bx bx-x close-menu'></i>
+        </label>
+    </header>
+
+    <!-- Projects -->
+    <div id="projects">
+        <h2 class="title">PROJECTS</h2>
+
+        <div class="wrapper">
+            <div class="container">
+                <!-- Project 1 -->
+                <input type="radio" name="slide" id="slide01" checked>
+                <label for="slide01" class="card">
+                    <div class="row">
+                        <div class="icon">1</div>
+                        <div class="description">
+                            <a href="../project_pages/project01.html">
+                                <h3>TIM 2020</h3>
+                            </a>
+                            <p>This is my 1er Project.</p>
+                        </div>
+                    </div>
+                </label>
+                <!-- Project 2 -->
+                <input type="radio" name="slide" id="slide02">
+                <label for="slide02" class="card">
+                    <div class="row">
+                        <div class="icon">2</div>
+                        <div class="description">
+                            <a href="../project_pages/project02.html">
+                                <h3>Project_2</h3>
+                            </a>
+                            <p>This is my 2e Project.</p>
+                        </div>
+                    </div>
+                </label>
+                <!-- Project 3 -->
+                <input type="radio" name="slide" id="slide03">
+                <label for="slide03" class="card">
+                    <div class="row">
+                        <div class="icon">3</div>
+                        <div class="description">
+                            <a href="../project_pages/project03.html">
+                                <h3>Project_3</h3>
+                            </a>
+                            <p>This is my 3e Project.</p>
+                        </div>
+                    </div>
+                </label>
+                <!-- Project 4 -->
+                <input type="radio" name="slide" id="slide04">
+                <label for="slide04" class="card">
+                    <div class="row">
+                        <div class="icon">4</div>
+                        <div class="description">
+                            <a href="../project_pages/project04.html">
+                                <h3>Project_4</h3>
+                            </a>
+                            <p>This is my 4e Project.</p>
+                        </div>
+                    </div>
+                </label>
+                <!-- Project 5 -->
+                <input type="radio" name="slide" id="slide05">
+                <label for="slide05" class="card">
+                    <div class="row">
+                        <div class="icon">5</div>
+                        <div class="description">
+                            <a href="../project_pages/project05.html">
+                                <h3>Project_5</h3>
+                            </a>
+                            <p>This is my 5e Project.</p>
+                        </div>
+                    </div>
+                </label>
+                <!-- Project 6 -->
+                <input type="radio" name="slide" id="slide06">
+                <label for="slide06" class="card">
+                    <div class="row">
+                        <div class="icon">6</div>
+                        <div class="description">
+                            <a href="../project_pages/project06.html">
+                                <h3>Project_6</h3>
+                            </a>
+                            <p>This is my 6e Project.</p>
+                        </div>
+                    </div>
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <!-- Star Background -->
+    <div id="universe"></div>
+    
+</body>
+
+<script src="../script.js"></script>
+
+</html>

@@ -1,0 +1,317 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: #ffa17f;
+    background: -webkit-linear-gradient(to right, #00223e, #ffa17f);
+    background: linear-gradient(to right, #00223e, #ffa17f);
+    overflow: hidden;
+}
+
+.title {
+    color: white;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 10px 0 10px rgba(0, 0, 0, 0.5);
+    font-size: 40px;
+}
+
+/**************** Navigator CSS *************** */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: rgba(0, 162, 255, 0.2);
+    backdrop-filter: blur(10px);
+    height: 80px;
+}
+
+.name {
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.logo img{
+    margin-left: 35%;
+    margin-top: 2%;
+    width: 25%;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 8px 16px;
+    transition: 300ms;
+    border-radius: 99px;
+    cursor: pointer;
+}
+
+.nav a:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.nav .logo {
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+header label {
+    display: none;
+}
+/****************  Home CSS *************** */
+
+/****************  About CSS *************** */
+
+/****************  Projects CSS *************** */
+
+.wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+}
+
+.container {
+    height: 400px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+}
+
+.card {
+    width: 80px;
+    border-radius: .75rem;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 0 10px;
+    display: flex;
+    align-items: flex-end;
+    transition: .6s cubic-bezier(.28, -0.03, 0, .99);
+    box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.8);
+}
+
+.card > .row {
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.card > .row > .icon{
+    background: #233;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.card > .row > .description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 80px;
+    width: 520px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition-delay: .3s;
+    transition: all .3s ease;
+}
+
+.description p {
+    color: #00006a;
+    padding-top: 5px;
+}
+
+.description h3 {
+    color: crimson;
+    text-decoration: uppercase;
+    text-decoration: underline;
+}
+
+.container input {
+    display: none;
+}
+
+.container input:checked + label {
+    width: 600px;
+    cursor: default;
+}
+
+.container input:checked + label .description {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+.card[for="slide01"] {
+    background-image: url("imgs/project_01.jpeg");
+}
+
+.card[for="slide02"] {
+    background-image: url("imgs/project_01.jpeg");
+}
+
+.card[for="slide03"] {
+    background-image: url("imgs/project_01.jpeg");
+}
+
+.card[for="slide04"] {
+    background-image: url("imgs/project_01.jpeg");
+}
+
+.card[for="slide05"] {
+    background-image: url("imgs/project_01.jpeg");
+}
+
+.card[for="slide06"] {
+    background-image: url("imgs/project_01.jpeg");
+}
+
+/****************  Contact CSS *************** */
+
+/****************  Projects pages CSS *************** */
+.project_container button {
+    height: 50px;
+}
+
+.project_container .title_section {
+
+    color: black;
+    font-size: 40px;
+}
+.arrow-back {
+    font-size: 45px;
+}
+/****************  Stars Background CSS *************** */
+.star0 {
+    height: 1px;
+    width: 1px;
+    opacity: 1;
+    position: absolute;
+    z-index: 1;
+}
+
+.star1 {
+    height: 2px;
+    width: 2px;
+    border-radius: 50%;
+    opacity: 1;
+    position: absolute;
+    z-index: 1;
+}
+
+.star2 {
+    height: 3px;
+    width: 3px;
+    border-radius: 50%;
+    opacity: 1;
+    position: absolute;
+    z-index: 1;
+}
+
+.star3 {
+    height: 4px;
+    width: 4px;
+    border-radius: 50%;
+    opacity: 1;
+    position: absolute;
+    z-index: 1;
+}
+
+@media (max-width: 768px) {
+    .nav {
+        z-index: 10;
+        position: absolute;
+        left: -100%;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        background: #0f172a;
+        height: 100vh;
+        width: 50%;
+        padding: 0 20px;
+        gap: 16px;
+        transition: 500ms;
+        box-shadow: 10px 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav a {
+        width: 20%;
+    }
+    
+    .nav .logo {
+        display: block;
+    }
+
+    .nav .logo img {
+        display: block;
+        margin: 0;
+        margin-left: -5px;
+        width: 100%;
+    }
+
+    .divider {
+        background: rgba(255, 255, 255, 0.5);
+        width: 100%;
+        height: 2px;
+        margin: 16px 0;
+    }
+
+    /* Buton Menu Burger */
+    header label {
+        display: block;
+    }
+
+    .menu {
+        display: block;
+        font-size: 45px;
+        color: white;
+        cursor: pointer;
+    }
+
+    .close-menu {
+        display: block;
+        font-size: 45px;
+        color: white;
+        cursor: pointer;
+    }
+
+    #check:checked~label .menu {
+        display: none;
+    }
+
+    #check:checked~.logo {
+        display: none;
+    }
+
+    label .close-menu {
+        display: none;
+    }
+
+    #check:checked~label .close-menu {
+        display: block;
+    }
+
+    #check:checked~nav {
+        left: 0%;
+    }
+}
